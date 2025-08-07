@@ -1,0 +1,93 @@
+/* Assignment container grid */
+.assigndiv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+/* Assignment cards/buttons */
+.assignitem {
+  /* background-color: #007bff; */
+  color: #fff;
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.assignitem:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Text inside buttons */
+.assignitem h1 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.assignitem p {
+  font-size: 1rem;
+  margin: 10px 0 0;
+}
+
+/* Center 4th and 5th buttons on second row */
+.assignitem:nth-child(4) {
+  grid-column: 2;
+}
+
+.assignitem:nth-child(5) {
+  grid-column: 3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .assigndiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .assignitem:nth-child(4),
+  .assignitem:nth-child(5) {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .assigndiv {
+    grid-template-columns: 1fr;
+  }
+
+  .assignitem {
+    width: 100%;
+    height: 180px;
+  }
+}
+.assignment-btn {
+  width: 300px;
+  height: 200px;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 20px;
+  /* background: linear-gradient(181deg, rgb(2, 0, 97) 15%, rgb(97, 149, 219) 158.5%); */
+   /* background:'linear-gradient(to right, #603813 80%, #b29f94 20%)'; */
+  transition: transform 0.2s;
+}
+
+.assignment-btn:hover {
+  transform: scale(1.05);
+}

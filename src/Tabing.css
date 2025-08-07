@@ -1,0 +1,10 @@
+.tabsystem.nav-pills.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #F2F4F7;
+    color: RED;
+    border-radius:0px ;
+    border-bottom: 3px solid blue;
+}
+.tabsystem.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: red;
+    background-color:linear-gradient(red,yellow)
+}

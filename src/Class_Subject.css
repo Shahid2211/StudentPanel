@@ -1,0 +1,134 @@
+.Class_SubjectOverlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    /* Modal container */
+    .Class_SubjectModal {
+      background-color: #644A07 !important;
+      border-radius: 16px;
+      width: 40%;
+      height: auto;
+      padding: 24px;
+      position: relative;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      animation: fadeIn 0.3s ease;
+      font-family: "Comic Sans MS", Arial, sans-serif;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Modal header */
+    .Class_SubjectModal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: none;
+      margin-bottom: 16px;
+    }
+
+    .modal-header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #000000;
+      text-align: left;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #FF8A65;
+      height: 35px;
+      line-height: 35px;
+      flex-grow: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    /* Close button */
+    .close-button {
+      position: relative;
+      top: 5px;
+      right: 0px;
+      width: 35px;
+      height: 35px;
+      font-size: 1.5rem;
+      /* background-color: rgb(255, 153, 0); */
+      background-color:#67595E;
+      color: #ffffff;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+      transition: color 0.2s ease, background-color 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .close-btn:hover {
+      color:white;
+      background-color: #ffaa33;
+    }
+
+    /* Modal body */
+    .modal-body {
+      background-color: none;
+      overflow-x: auto;
+      flex-grow: 1;
+    }
+
+    /* Table styles */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+
+    thead {
+      background-color: #f0f0f0;
+    }
+
+    th, td {
+      padding: 12px 14px;
+      border: 1px solid #ddd;
+      font-family: "Comic Sans MS", Arial, sans-serif;
+      text-align: left;
+      color: #000000;
+    }
+
+    th {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    td {
+      font-size: 0.95rem;
+    }
+
+    /* Loading and error styles */
+    .loading {
+      text-align: center;
+      font-family: "Comic Sans MS", Arial, sans-serif;
+      color: #000000;
+    }
+
+    .error {
+      text-align: center;
+      font-family: "Comic Sans MS", Arial, sans-serif;
+      color: #ff4d4d;
+    }  
+

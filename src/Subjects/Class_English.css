@@ -1,0 +1,43 @@
+
+  .custom-tabs .nav-link {
+    color: blue;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .custom-tabs .nav-link.active {
+    color: purple;
+    font-weight: bold;
+    border-bottom: 2px solid purple;
+  }
+
+  .table thead {
+    background-color: purple;
+    color: white;
+  }
+
+  .form-label {
+    font-size: 1rem;
+  }
+
+  .form-select,
+  .form-control {
+    height: 40px;
+  }
+
+  .heading th {
+    background-color: purple;
+    color: white;
+    font-family: 'Enriqueta', serif;
+    font-size: 20px;
+  }
+
+  .border-box {
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background-color: #fdfdfd;
+  }
+

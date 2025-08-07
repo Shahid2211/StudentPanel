@@ -1,0 +1,18 @@
+/* Style for table header */
+.table-custom thead tr {
+  /* background-color: #0000ff; Blue background, using hex for specificity */
+  background-color:'#113F67';
+  color: #ffffff; /* White text */
+}
+
+/* Style for table cells */
+.table.time-table td, .table.time-table th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Optional: Ensure table header cells are also centered */
+.table-custom thead th {
+  text-align: center;
+  vertical-align: middle;
+}

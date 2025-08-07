@@ -1,0 +1,124 @@
+.Header {
+  width: 100%;
+  background-color: #f8f9fa; /* Light gray background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Left section (Welcome message) */
+.headeritemL {
+  display: flex;
+  align-items: center;
+  margin-left: 220px;
+}
+
+/* Animated greeting GIF */
+.hi-gif {
+  width: 30px;
+  height: 30px;
+}
+
+/* Icon styling */
+.headeritemR .icon {
+  cursor: pointer;
+  color: #343a40;
+  transition: color 0.2s;
+}
+
+.react-calendar {
+  border: none;
+  /* border-radius: 15px; */
+  animation: fadeIn 0.3s ease-in-out;
+  font-size: 1.5rem;
+}
+
+.react-calendar,
+.react-calendar * {
+  color: black !important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.MuiIconButton-root {
+  background-color: transparent !important;
+}
+
+.MuiIconButton-root:hover,
+.MuiIconButton-root:focus,
+.MuiIconButton-root:active,
+.MuiIconButton-root:focus-visible {
+  background-color: transparent !important;
+  outline: none !important;
+}
+
+/* Style the navigation (month/year) */
+.react-calendar__navigation {
+  background-color: #2295c7ff !important;
+  min-height: 70px;
+  color: white !important;
+}
+
+.react-calendar__navigation button {
+  font-size: 1.5rem;
+  color: white !important;
+  background-color: #2295c7ff !important; /* Ensure consistent background */
+}
+
+/* Remove hover effect on navigation buttons */
+.react-calendar__navigation button:hover,
+.react-calendar__navigation button:focus,
+.react-calendar__navigation button:active {
+  background-color: #2295c7ff !important; /* Match default background */
+  color: white !important; /* Match default text color */
+  outline: none !important;
+}
+
+/* Style the month/year title */
+.react-calendar__navigation__label {
+  font-size: 1.5rem !important;
+  font-weight: bold;
+  color: white !important;
+}
+
+/* Style the weekday headings */
+.react-calendar__month-view__weekdays {
+  padding: 5px;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  color: black !important;
+  font-weight: bold;
+}
+
+/* Style calendar tiles */
+.react-calendar__tile:enabled:focus,
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile--active,
+.react-calendar__tile--now {
+  background-color: #2295c7ff;
+  color: white !important;
+  border-radius: 50% !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.react-calendar__tile:enabled:hover {
+  background-color: rgb(203, 228, 238);
+  /* background-color: yellow; */
+  border-radius: 50% !important;
+  font-size: 1.5rem;
+  cursor: pointer;
+}

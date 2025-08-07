@@ -1,0 +1,177 @@
+/* Modal overlay to cover the entire screen
+.FeeModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.FeeModalOverlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.FeeModal {
+  width: 600px;
+  height: 200px;
+  background: linear-gradient(to bottom, red, yellow);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.FeeModalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFA865;
+  padding: 10px;
+  border-bottom: 3px solid #FF7F50;
+}
+
+.FeeModalHeader h2 {
+  color: white;
+  text-align: left;
+  width: 600px;
+  font-size: 1.5rem;
+  background-color: blue;
+  border-bottom: 3px solid #FFA865;
+  margin: 0;
+}
+
+
+.FeeModalHeader button {
+  background-color: #FFA865;
+  border: none;
+  color: white;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.FeeModalHeader button:hover {
+  color: #ddd;
+}
+
+.FeeModalFooter {
+  text-align: center;
+  background: linear-gradient(to right, red, yellow);
+}
+
+.FeeModalFooter p {
+  color: blueviolet;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+  background: linear-gradient(to right,red,yellow);
+
+}
+
+.FeeModalFooter p {
+  color: blueviolet;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+} */
+ /* Modal overlay to cover the entire screen */
+/* Modal overlay to cover the entire screen */
+.FeeModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent to show StudentDashboard */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Active state for modal overlay when open */
+.FeeModalOverlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Modal container */
+.FeeModal {
+  width: 600px;
+  height: 200px;
+  background: linear-gradient(to bottom, #ff0000, #ffff00); /* Red to yellow gradient */
+  border-radius: 8px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Header styling */
+.feeHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feeHeader h2 {
+  color: white;
+  text-align: left;
+  font-size: 1.5rem;
+  background-color:none;
+  border-bottom: 3px solid #FFA865;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Close button styling */
+.feeHeader button {
+  background-color: yellow;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feeHeader button:hover {
+  background-color: #eb3d94;
+}
+
+/* Footer styling */
+.footer {
+  text-align: center;
+  /* background: linear-gradient(to right, #ff0000, #ffff00); Red to yellow gradient */
+}
+
+.footer p10{
+  color:black;
+  font-size: 2rem;
+  background-color: none;
+  margin: 0;
+}
